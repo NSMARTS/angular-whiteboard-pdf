@@ -4,7 +4,7 @@ import { Observable, Subject } from 'rxjs';
 import { pluck, takeUntil, distinctUntilChanged, pairwise } from 'rxjs/operators';
 
 
-import { CanvasService } from 'src/@pv/services/canvas/canvas.service';
+import { CanvasService } from '../../../@pv/services/canvas/canvas.service';
 import { EventBusService } from 'src/@pv/services/eventBus/event-bus.service';
 import { RenderingService } from 'src/@pv/services/rendering/rendering.service';
 
