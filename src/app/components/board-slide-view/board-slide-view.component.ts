@@ -6,7 +6,7 @@ import { pluck, takeUntil, distinctUntilChanged, pairwise } from 'rxjs/operators
 
 import { CanvasService } from '../../../@pv/services/canvas/canvas.service';
 import { EventBusService } from '../../../@pv/services/eventBus/event-bus.service';
-import { RenderingService } from 'src/@pv/services/rendering/rendering.service';
+import { RenderingService } from '../../../@pv/services/rendering/rendering.service';
 
 import { ViewInfoService } from 'src/@pv/store/view-info.service';
 
