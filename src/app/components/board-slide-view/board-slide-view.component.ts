@@ -8,7 +8,7 @@ import { CanvasService } from '../../../@pv/services/canvas/canvas.service';
 import { EventBusService } from '../../../@pv/services/eventBus/event-bus.service';
 import { RenderingService } from '../../../@pv/services/rendering/rendering.service';
 
-import { ViewInfoService } from 'src/@pv/store/view-info.service';
+import { ViewInfoService } from '../../../@pv/store/view-info.service';
 
 
 
