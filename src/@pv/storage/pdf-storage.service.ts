@@ -32,7 +32,7 @@ export class PdfStorageService {
    * @return 해당 page의 pdf document
   */
   getPdfPage(pageNum) {
-    return this._pdfVar.pdfPages[pageNum];
+    return this._pdfVar.pdfPages[pageNum - 1];
   }
 
 
