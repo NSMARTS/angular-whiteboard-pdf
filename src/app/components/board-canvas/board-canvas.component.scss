@@ -41,8 +41,9 @@ $thumbnail-width : 150px;
     line-height: 0;
     margin: auto;
     width: 100vw;
-    max-width:100%;
+    max-width: 100%;
     background-color: #eee;
+
     div.tmp {
         position: absolute;
         display: none;
@@ -54,18 +55,20 @@ $thumbnail-width : 150px;
         box-sizing: border-box;
         width: 100%;
     }
+
     div.canvasTeacher {
 
-      position: absolute;
-      box-sizing: border-box;
-      width: 100%;
-  }
-  div.cover {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+    }
 
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-}
+    div.cover {
+
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+    }
 
 }
 
