@@ -32,8 +32,9 @@ export class PdfStorageService {
    * @return 해당 page의 pdf document
   */
   getPdfPage(pageNum) {
-    return this._pdfVar.pdfPages[pageNum - 1];
+    return this._pdfVar.pdfPages[pageNum];
   }
+
 
   /**
    * 해당 page의 scale 1에 해당하는 viewport size.

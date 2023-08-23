@@ -32,6 +32,8 @@ export class EditInfoService extends Store<any> {
     super(new InitEditInfo());
   }
 
+
+
   setEditInfo(editInfo: any): void {
 
     // Tool Disable 설정
