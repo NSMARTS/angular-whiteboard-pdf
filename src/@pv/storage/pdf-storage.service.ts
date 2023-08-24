@@ -42,7 +42,7 @@ export class PdfStorageService {
   */
   getViewportSize(pageNum) {
     // console.log(`> get ViewPort size: pageNum : ${pageNum}`);
-    return this._pdfVar.pdfPages[pageNum - 1].getViewport({ scale: 1.333 });
+    return this._pdfVar.pdfPages[pageNum - 1].getViewport({ scale: 1 });
   }
 
 
