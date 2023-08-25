@@ -52,20 +52,20 @@ export class PdfStorageService {
    * {@link https://github.com/mozilla/pdf.js/issues/9662 }
    * {@link https://stackoverflow.com/questions/40890212/viewer-js-pdf-js-memory-usage-increases-every-time-a-pdf-is-rendered?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa}
    */
-  memoryRelease() {
-    // console.log('PDF Memeory Release');
+  // memoryRelease() {
+  //   // console.log('PDF Memeory Release');
 
-    if (this._pdfVar.pdfDestroy) {
-      this._pdfVar.pdfDestroy.cleanup();
-      this._pdfVar.pdfDestroy.destroy();
-    }
+  //   if (this._pdfVar.pdfDestroy) {
+  //     this._pdfVar.pdfDestroy.cleanup();
+  //     this._pdfVar.pdfDestroy.destroy();
+  //   }
 
-    for (const pdfPage of this._pdfVar.pdfPages) {
-      pdfPage.cleanup();
-    }
+  //   for (const pdfPage of this._pdfVar.pdfPages) {
+  //     pdfPage.cleanup();
+  //   }
 
-    this._pdfVar.pdfDestroy = '';
-    this._pdfVar.pdfPages = [];
-  }
+  //   this._pdfVar.pdfDestroy = '';
+  //   this._pdfVar.pdfPages = [];
+  // }
 
 }
