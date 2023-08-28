@@ -165,7 +165,5 @@ export class ZoomService {
     return zoomScale;
   }
 
-  memory(data) {
-    const dpf = data
-  }
+
 }
