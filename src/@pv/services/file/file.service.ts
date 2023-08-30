@@ -13,7 +13,6 @@ export class FileService {
 
   constructor(
     private pdfStorageService: PdfStorageService,
-    private http: HttpClient,
   ) { }
 
 
@@ -24,21 +23,21 @@ export class FileService {
    * @param aFile
    * @returns
    */
-	async openDoc(aFile) {
+  async openDoc(aFile) {
 
     console.log('>> open PDF File');
 
-		const file = await this.readFile(aFile);
+    const file = await this.readFile(aFile);
 
-		const pdfVar:any = {};
+    const pdfVar: any = {};
 
-		pdfVar.fileBuffer = file;
-		const results = await this.pdfConvert(file);
+    pdfVar.fileBuffer = file;
+    const results = await this.pdfConvert(file);
 
-		pdfVar.pdfPages = results.pdfPages; //pdf 문서의 page별 정보
-		pdfVar.pdfDestroy = results.pdfDoc;
-		// console.log(pdfVar);
-		this.pdfStorageService.setPdfVar(pdfVar);
+    pdfVar.pdfPages = results.pdfPages; //pdf 문서의 page별 정보
+    pdfVar.pdfDestroy = results.pdfDoc;
+    // console.log(pdfVar);
+    this.pdfStorageService.setPdfVar(pdfVar);
 
     return results.pdfPages.length;
   }

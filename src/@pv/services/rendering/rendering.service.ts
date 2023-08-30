@@ -54,7 +54,7 @@ export class RenderingService {
       ------------------------------------*/
       await pdfPage.render(renderContext).promise;
       imgElement.src = tmpCanvas.toDataURL();
-      console.log(imgElement)
+
       return true;
 
     } catch (err) {
