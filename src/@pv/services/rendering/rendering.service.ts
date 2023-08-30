@@ -39,7 +39,7 @@ export class RenderingService {
     const tmpCtx = tmpCanvas.getContext("2d");
 
     // 1/2 scale로 설정 (임시)
-    const viewport = pdfPage.getViewport({ scale: 0.3 });
+    const viewport = pdfPage.getViewport({ scale: 0.5 });
     tmpCanvas.width = viewport.width;
     tmpCanvas.height = viewport.height;
 
@@ -54,7 +54,7 @@ export class RenderingService {
       ------------------------------------*/
       await pdfPage.render(renderContext).promise;
       imgElement.src = tmpCanvas.toDataURL();
-
+      console.log(imgElement)
       return true;
 
     } catch (err) {
