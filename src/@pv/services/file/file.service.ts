@@ -75,7 +75,7 @@ export class FileService {
   async pdfConvert(file) {
     const CMAP_URL = '/assets/lib/pdf/cmaps/'; // --> 나중에 서버로 이동할지 check.
     const CMAP_PACKED = true;
-    const pdfPages = [];
+    const pdfPages: any = [];
 
     try {
       // new version
