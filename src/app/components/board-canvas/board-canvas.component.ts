@@ -9,16 +9,16 @@ import { CanvasService } from '../../../@pv/services/canvas/canvas.service';
 import { RenderingService } from '../../../@pv/services/rendering/rendering.service';
 
 import { EventBusService } from '../../../@pv/services/eventBus/event-bus.service';
-import { EventData } from 'src/@pv/services/eventBus/event.class';
+import { EventData } from '../../../@pv/services/eventBus/event.class';
 
-import { PdfStorageService } from 'src/@pv/storage/pdf-storage.service';
+import { PdfStorageService } from '../../../@pv/storage/pdf-storage.service';
 
-import { DrawingService } from 'src/@pv/services/drawing/drawing.service';
-import { DrawStorageService } from 'src/@pv/storage/draw-storage.service';
+import { DrawingService } from '../../../@pv/services/drawing/drawing.service';
+import { DrawStorageService } from '../../../@pv/storage/draw-storage.service';
 
 
-import { ViewInfoService } from 'src/@pv/store/view-info.service';
-import { EditInfoService } from 'src/@pv/store/edit-info.service';
+import { ViewInfoService } from '../../../@pv/store/view-info.service';
+import { EditInfoService } from '../../..//@pv/store/edit-info.service';
 
 
 export interface DialogData {
