@@ -16,7 +16,7 @@ export class EventBusService {
   on(eventName: string, unsubscribe$: any, action: any): Subscription {
     return this.subject$.pipe(
       takeUntil(unsubscribe$),
-      filter( (e: EventData) => e.name === eventName),
-      map( (e: EventData) => e["value"])).subscribe(action);
+      filter((e: EventData) => e.name === eventName),
+      map((e: EventData) => e["value"])).subscribe(action);
   }
 }
