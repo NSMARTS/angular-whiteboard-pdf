@@ -3,9 +3,9 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil, distinctUntilChanged } from 'rxjs/operators'
 
-import { CANVAS_CONFIG } from 'src/@pv/config/config';
+import { CANVAS_CONFIG } from '../../../@pv/config/config';
 
-import { EditInfoService } from 'src/@pv/store/edit-info.service';
+import { EditInfoService } from '../../../@pv/store/edit-info.service';
 
 
 
@@ -71,7 +71,7 @@ export class BoardNavComponent implements OnInit {
   changeColor(color) {
     const editInfo = Object.assign({}, this.editInfoService.state);
 
-    if (editInfo.mode != 'draw' || editInfo.tool!='pen' ) return;
+    if (editInfo.mode != 'draw' || editInfo.tool != 'pen') return;
 
     editInfo.toolsConfig.pen.color = color;
     this.editInfoService.setEditInfo(editInfo);
