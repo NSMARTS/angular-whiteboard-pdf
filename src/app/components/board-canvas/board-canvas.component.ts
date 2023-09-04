@@ -5,7 +5,7 @@ import { pluck, takeUntil, distinctUntilChanged, debounceTime } from 'rxjs/opera
 
 import { CANVAS_CONFIG } from '../../../@pv/config/config';
 
-import { CanvasService } from 'src/@pv/services/canvas/canvas.service';
+import { CanvasService } from '../../../@pv/services/canvas/canvas.service';
 import { RenderingService } from 'src/@pv/services/rendering/rendering.service';
 
 import { EventBusService } from 'src/@pv/services/eventBus/event-bus.service';
