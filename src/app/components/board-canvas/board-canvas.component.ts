@@ -3,7 +3,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { Subject, fromEvent } from 'rxjs';
 import { pluck, takeUntil, distinctUntilChanged, debounceTime } from 'rxjs/operators';
 
-import { CANVAS_CONFIG } from 'src/@pv/config/config';
+import { CANVAS_CONFIG } from '../../../@pv/config/config';
 
 import { CanvasService } from 'src/@pv/services/canvas/canvas.service';
 import { RenderingService } from 'src/@pv/services/rendering/rendering.service';
