@@ -20,6 +20,5 @@ export const CANVAS_CONFIG = {
     pen: [4, 7, 13],
     eraser: [30, 45, 60]
   },
-  penHeight: 3
 };
 
