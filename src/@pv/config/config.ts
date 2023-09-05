@@ -13,12 +13,13 @@ export const CANVAS_CONFIG = {
   maxZoomScale: 3,
   minZoomScale: 0.1,
   penWidth: 2,
-	eraserWidth: 30,
-	sidebarWidth: 175,
-	navbarHeight: 70,
-	widthSet: {
-		pen: [4, 7, 13],
-		eraser: [30, 45, 60]
-	}
+  eraserWidth: 30,
+  sidebarWidth: 175,
+  navbarHeight: 70,
+  widthSet: {
+    pen: [4, 7, 13],
+    eraser: [30, 45, 60]
+  },
+  penHeight: 3
 };
 
