@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ZoomService } from '../../../@pv/services/zoom/zoom.service'
 
-import { ViewInfoService } from 'src/@pv/store/view-info.service';
+import { ViewInfoService } from '../../../@pv/store/view-info.service';
 
 
 @Component({
