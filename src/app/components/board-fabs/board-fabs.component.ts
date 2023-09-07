@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ZoomService } from 'src/@pv/services/zoom/zoom.service'
+import { ZoomService } from '../../../@pv/services/zoom/zoom.service'
 
 import { ViewInfoService } from 'src/@pv/store/view-info.service';
 
@@ -29,7 +29,7 @@ export class BoardFabsComponent implements OnInit {
    *
    * @param action : 'fitToWidth' , 'fitToPage', 'zoomIn', 'zoomOut'
    */
-  clickZoom(action:any){
+  clickZoom(action: any) {
     console.log(">> Click Zoom: ", action);
 
     const currentPage = this.viewInfoService.state.currentPage;
