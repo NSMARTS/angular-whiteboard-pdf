@@ -1,0 +1,44 @@
+<div class="whiteBoard-container">
+
+  <!----------------------------------------------------------------
+		board-nav
+	--------------------------------------------------------------- -->
+  <div class="navbar_container">
+    <app-board-nav></app-board-nav>
+  </div>
+
+
+  <!----------------------------------------------------------------
+		board-slide-view
+	--------------------------------------------------------------- -->
+  <div class="sidebar_container">
+
+    <app-board-slide-view (newLocalDocumentFile)="onDocumentOpened($event)"></app-board-slide-view>
+
+  </div>
+
+  <!----------------------------------------------------------------
+		board-canvas
+	--------------------------------------------------------------- -->
+  <div class="pdf_container">
+    <div class="pdf-main">
+      <app-board-canvas></app-board-canvas>
+
+      <!------------------------------------------
+				Floating Fab buttons
+				- zoom
+				- blind
+				- replay
+			------------------------------------------ -->
+      <div class="fabs_container">
+        <app-board-fabs></app-board-fabs>
+      </div>
+    </div>
+
+  </div>
+
+  <!----------------------------------------------------------------
+		board-fabs
+	--------------------------------------------------------------- -->
+
+</div>
