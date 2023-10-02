@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { pluck, takeUntil } from 'rxjs/operators';
 
-import { EventData } from 'src/@pv/services/eventBus/event.class';
+import { EventData } from '../@pv/services/eventBus/event.class';
 import { FileService } from 'src/@pv/services/file/file.service';
 import { ZoomService } from 'src/@pv/services/zoom/zoom.service'
 
@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
     const obj = {
       isDocLoaded: true,
       loadedDate: new Date().getTime(),
-      numPages : numPages,
+      numPages: numPages,
       currentPage: 1,
       zoomScale: this.zoomService.setInitZoomScale()
     };
