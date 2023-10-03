@@ -4,9 +4,9 @@ import { pluck, takeUntil } from 'rxjs/operators';
 
 import { EventData } from '../@pv/services/eventBus/event.class';
 import { FileService } from '../@pv/services/file/file.service';
-import { ZoomService } from 'src/@pv/services/zoom/zoom.service'
+import { ZoomService } from '../@pv/services/zoom/zoom.service'
 
-import { ViewInfoService } from 'src/@pv/store/view-info.service';
+import { ViewInfoService } from '../@pv/store/view-info.service';
 
 import { PdfStorageService } from 'src/@pv/storage/pdf-storage.service';
 
