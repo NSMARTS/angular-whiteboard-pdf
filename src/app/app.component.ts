@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { pluck, takeUntil } from 'rxjs/operators';
 
 import { EventData } from '../@pv/services/eventBus/event.class';
-import { FileService } from 'src/@pv/services/file/file.service';
+import { FileService } from '../@pv/services/file/file.service';
 import { ZoomService } from 'src/@pv/services/zoom/zoom.service'
 
 import { ViewInfoService } from 'src/@pv/store/view-info.service';
