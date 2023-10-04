@@ -8,12 +8,12 @@ import { ZoomService } from '../@pv/services/zoom/zoom.service'
 
 import { ViewInfoService } from '../@pv/store/view-info.service';
 
-import { PdfStorageService } from 'src/@pv/storage/pdf-storage.service';
+import { PdfStorageService } from '../@pv/storage/pdf-storage.service';
 
 
-import { EventBusService } from 'src/@pv/services/eventBus/event-bus.service';
-import { DrawStorageService } from 'src/@pv/storage/draw-storage.service';
-import { CANVAS_CONFIG } from 'src/@pv/config/config';
+import { EventBusService } from '../@pv/services/eventBus/event-bus.service';
+import { DrawStorageService } from '../@pv/storage/draw-storage.service';
+import { CANVAS_CONFIG } from '../@pv/config/config';
 
 
 /**
