@@ -13,7 +13,6 @@ import { PdfStorageService } from '../@pv/storage/pdf-storage.service';
 
 import { EventBusService } from '../@pv/services/eventBus/event-bus.service';
 import { DrawStorageService } from '../@pv/storage/draw-storage.service';
-import { CANVAS_CONFIG } from '../@pv/config/config';
 
 
 /**
