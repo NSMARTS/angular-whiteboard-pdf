@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { pluck, takeUntil } from 'rxjs/operators';
 
-import { EventData } from '../@pv/services/eventBus/event.class';
 import { FileService } from '../@pv/services/file/file.service';
 import { ZoomService } from '../@pv/services/zoom/zoom.service'
 
