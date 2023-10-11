@@ -30,11 +30,10 @@ import { DrawStorageService } from '../@pv/storage/draw-storage.service';
 export class AppComponent implements OnInit {
 
   private unsubscribe$ = new Subject<void>();
-  private meetingId;
+
 
   constructor(
     private viewInfoService: ViewInfoService,
-    private pdfStorageService: PdfStorageService,
     private fileService: FileService,
     private zoomService: ZoomService,
     private eventBusService: EventBusService,
