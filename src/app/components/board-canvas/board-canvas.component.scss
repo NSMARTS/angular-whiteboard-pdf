@@ -9,70 +9,70 @@ $thumbnail-width : 150px;
     boddy
 *********************/
 .overflow-hidden {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #canvasContainer {
-    // margin-left: $sidebar-width;
-    position: relative;
-    overflow: auto;
+  // margin-left: $sidebar-width;
+  position: relative;
+  overflow: auto;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-    //div 순서대로 쌓임... (div가 absolute가 아니라 height:0으로 설정되어 쌓이는 형식)
-    canvas {
-        position: absolute;
-        //left: 0px;   //=>left:0 , container의 margin으로 변경
-        background-color: transparent;
-    }
+  //div 순서대로 쌓임... (div가 absolute가 아니라 height:0으로 설정되어 쌓이는 형식)
+  canvas {
+    position: absolute;
+    left: 0px; //=>left:0 , container의 margin으로 변경
+    background-color: transparent;
+  }
 
 }
 
 .canvas-container {
-    // border: 1px solid black;
-    text-align: center;
-    position: relative;
-    overflow: auto;
-    overflow: scroll;
-    /* IE scroll 숨김 */
-    -ms-overflow-style: none;
-    line-height: 0;
-    margin: auto;
-    width: 100vw;
-    max-width: 100%;
-    background-color: #eee;
+  // border: 1px solid black;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+  overflow: scroll;
+  /* IE scroll 숨김 */
+  -ms-overflow-style: none;
+  line-height: 0;
+  margin: auto;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #eee;
 
-    div.tmp {
-        position: absolute;
-        display: none;
-    }
+  div.tmp {
+    position: absolute;
+    display: none;
+  }
 
-    div.canvasBackground {
+  div.canvasBackground {
 
-        position: absolute;
-        box-sizing: border-box;
-        width: 100%;
-    }
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-    div.canvasTeacher {
+  div.canvasTeacher {
 
-        position: absolute;
-        box-sizing: border-box;
-        width: 100%;
-    }
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-    div.cover {
+  div.cover {
 
-        position: absolute;
-        box-sizing: border-box;
-        width: 100%;
-    }
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+  }
 
 }
 
 .canvas-container::-webkit-scrollbar {
-    display: none;
-    width: 0 !important;
+  display: none;
+  width: 0 !important;
 }
