@@ -32,9 +32,7 @@ export class EditInfoService extends Store<any> {
     super(new InitEditInfo());
   }
 
-  getEditInfo(editInfo: any): void {
-    return { ...this.state }
-  }
+
 
   setEditInfo(editInfo: any): void {
 
