@@ -74,11 +74,7 @@ export class AppComponent implements OnInit {
 
   async onDocumentOpened(newDocumentFile) {
 
-    // this.pdfStorageService.memoryRelease();
-
-
     const numPages = await this.fileService.openDoc(newDocumentFile);
-    // console.log(this.pdfStorageService.pdfVar);
     const obj = {
       isDocLoaded: true,
       loadedDate: new Date().getTime(),
