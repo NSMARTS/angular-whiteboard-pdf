@@ -24,7 +24,7 @@ $thumbnail-width : 150px;
   //div 순서대로 쌓임... (div가 absolute가 아니라 height:0으로 설정되어 쌓이는 형식)
   canvas {
     position: absolute;
-    left: 0px; //=>left:0 , container의 margin으로 변경
+    //left: 0px;   //=>left:0 , container의 margin으로 변경
     background-color: transparent;
   }
 

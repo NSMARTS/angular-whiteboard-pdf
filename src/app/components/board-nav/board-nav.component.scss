@@ -23,24 +23,14 @@
     width: 150px;
     margin-right: 10px;
 
-    // .class-name {
-    //     font-size: 18px;
-    //     color: #eee;
-    //     width: 120px;
-    //     overflow: hidden;
-    //     text-overflow: ellipsis;
-    //     white-space: nowrap;
-    // }
-
     .class-name {
-      font-size: 3rem;
+      font-size: 18px;
       color: #eee;
-      width: 100rem;
+      width: 120px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-
 
     .student-info {
       display: flex;
