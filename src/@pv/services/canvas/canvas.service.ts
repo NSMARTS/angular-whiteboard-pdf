@@ -249,24 +249,24 @@ export class CanvasService {
 
 
       // Throttle Test (For Laser) ////////////////////////
-      downEvent에 추가: 여기서 한번 laser socket.전송.
-      Laser인 경우에만 추가
-      console.log(points[0], points[1]);
+      // downEvent에 추가 : 여기서 한번 laser socket. 전송.
+      // Laser인 경우에만 추가
+      // console.log(points[0], points[1]);
 
-      merge(
-        fromEvent(sourceCanvas, 'mousemove'),
-        fromEvent(sourceCanvas, 'touchmove')
-      ).pipe(
-        takeUntil(fromEvent(sourceCanvas, 'mouseup')),
-        takeUntil(fromEvent(sourceCanvas, 'mouseout')),
-        takeUntil(fromEvent(sourceCanvas, 'touchend')),
-        throttleTime(200)
-      ).subscribe({
-        // console.log("throttle!!!")
-        complete: () => { console.log('completed') }, // completeHandler
-        error: () => { console.log('error') },    // errorHandler
-        next: () => { console.log('throttle!!: ', oldPoint[0], oldPoint[1]) },     // nextHandler
-      });
+      // merge(
+      //   fromEvent(sourceCanvas, 'mousemove'),
+      //   fromEvent(sourceCanvas, 'touchmove')
+      // ).pipe(
+      //   takeUntil(fromEvent(sourceCanvas, 'mouseup')),
+      //   takeUntil(fromEvent(sourceCanvas, 'mouseout')),
+      //   takeUntil(fromEvent(sourceCanvas, 'touchend')),
+      //   throttleTime(200)
+      // ).subscribe({
+      //   // console.log("throttle!!!")
+      //   complete: () => { console.log('completed') }, // completeHandler
+      //   error: () => { console.log('error')},    // errorHandler
+      //   next: () => { console.log('throttle!!: ', oldPoint[0], oldPoint[1]) },     // nextHandler
+      // });
       /////////////////////////////////////////
 
     };
