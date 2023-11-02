@@ -25,7 +25,7 @@ export class FileService {
    */
   async openDoc(aFile) {
 
-    console.log('>> open PDF File');
+    // console.log('>> open PDF File');
 
     const file = await this.readFile(aFile);
 
