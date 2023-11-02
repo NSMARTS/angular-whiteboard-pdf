@@ -20,7 +20,7 @@ export class DrawingService {
     context.beginPath();
     context.arc(points[0], points[1], tool.width / 2, 0, Math.PI * 2, !0);
     context.fill();
-    console.log('Start')
+    // console.log('Start')
     context.closePath();
 
     if (tool.type === "eraser") {
@@ -42,11 +42,11 @@ export class DrawingService {
     context.fillStyle = tool.color;
     context.strokeStyle = tool.color;
 
-    let a;
-    let b;
-    let c;
-    let d;
-    let i;
+    let a: any;
+    let b: any;
+    let c: any;
+    let d: any;
+    let i: any;
     const len = points.length / 2; // x, y 1차원 배열로 처리 --> /2 필요.
 
     context.beginPath();
