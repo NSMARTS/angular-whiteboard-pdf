@@ -105,9 +105,10 @@ export class BoardNavComponent implements OnInit {
    */
   changeTool(tool) {
     // console.log(tool)
-    const editInfo = Object.assign({}, this.editInfoService.state);
-    editInfo.mode = 'draw';
-    editInfo.tool = tool;
+    // const editInfo = Object.assign({}, this.editInfoService.state);
+    // editInfo.mode = 'draw';
+    // editInfo.tool = tool;
+    const editInfo = { ...this.editInfoService.state, mode: 'draw', tool: tool }
     this.editInfoService.setEditInfo(editInfo);
 
     // 지우개 2번 Click은 여기서 check 하는 것이 좋을 듯?
@@ -121,9 +122,8 @@ export class BoardNavComponent implements OnInit {
    *
    */
   changeMode(mode) {
-    // const editInfo = Object.assign({}, this.editInfoService.state);
-    // editInfo.mode = 'move';
-    const editInfo = { ...this.editInfoService.state, mode: 'move' }
+    const editInfo = Object.assign({}, this.editInfoService.state);
+    editInfo.mode = 'move';
     this.editInfoService.setEditInfo(editInfo);
   }
 
