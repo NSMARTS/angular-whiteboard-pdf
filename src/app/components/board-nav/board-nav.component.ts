@@ -121,8 +121,9 @@ export class BoardNavComponent implements OnInit {
    *
    */
   changeMode(mode) {
-    const editInfo = Object.assign({}, this.editInfoService.state);
-    editInfo.mode = 'move';
+    // const editInfo = Object.assign({}, this.editInfoService.state);
+    // editInfo.mode = 'move';
+    const editInfo = { ...this.editInfoService.state, mode: 'move' }
     this.editInfoService.setEditInfo(editInfo);
   }
 
