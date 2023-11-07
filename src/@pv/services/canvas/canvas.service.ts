@@ -197,9 +197,9 @@ export class CanvasService {
     const scale = zoomScale || 1;
 
     // **************************** Mouse/touch Event **************************************** //
-    sourceCanvas.onmousedown = sourceCanvas.ontouchstart = downEvent;
-    sourceCanvas.onmousemove = sourceCanvas.ontouchmove = moveEvent;
-    sourceCanvas.onmouseout = sourceCanvas.onmouseup = sourceCanvas.ontouchend = upEvent;
+    // sourceCanvas.onmousedown = sourceCanvas.ontouchstart = downEvent;
+    // sourceCanvas.onmousemove = sourceCanvas.ontouchmove = moveEvent;
+    // sourceCanvas.onmouseout = sourceCanvas.onmouseup = sourceCanvas.ontouchend = upEvent;
     // *************************************************************************************** //
 
     for (const item of this.listenerSet) {
