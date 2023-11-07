@@ -17,8 +17,8 @@ export const CANVAS_CONFIG = {
   sidebarWidth: 175,
   navbarHeight: 70,
   widthSet: {
-    pen: [4, 7, 13],
-    eraser: [30, 45, 60]
+    pen: [4, 7, 13, 24, 30],
+    eraser: [30, 45, 60, 75, 90]
   },
 };
 
