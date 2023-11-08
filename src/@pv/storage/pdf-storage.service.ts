@@ -14,8 +14,6 @@ export class PdfStorageService {
     pdfPages: []
   };
 
-  pdfArray = []
-
   constructor() { }
 
 
@@ -25,10 +23,6 @@ export class PdfStorageService {
 
   setPdfVar(pdfVar) {
     this._pdfVar = pdfVar;
-  }
-
-  setPdfArray(pdfVar) {
-    this.pdfArray.push(pdfVar);
   }
 
 
