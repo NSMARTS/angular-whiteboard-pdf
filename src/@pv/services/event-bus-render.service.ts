@@ -78,4 +78,33 @@ export class EventBusRenderService {
 
     return zoomScale;
   }
+
+
+  // zoomscale 결정(zoomin, zoomout, fit to page .... etc)
+  calcZoomScale(zoomInfo, pageNum, prevZoomScale = 1) {
+
+    let zoomScale = 1;
+
+    switch (zoomInfo) {
+      case 'zoomIn':
+        zoomScale = this.calcNewZoomScale(prevZoomScale, +1);
+        break;
+
+      case 'zoomOut':
+        zoomScale = this.calcNewZoomScale(prevZoomScale, -1);
+        break;
+
+      // 너비에 맞춤
+      case 'fitToWidth':
+        zoomScale = this.fitToWidth(pageNum);
+        break;
+
+      // page에 맞춤
+      case 'fitToPage':
+        zoomScale = this.fitToPage(pageNum);
+        break;
+    }
+
+    return zoomScale;
+  }
 }
