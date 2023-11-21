@@ -144,7 +144,7 @@ export class EventBusRenderService {
       return true;
 
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       return false;
     }
   }
