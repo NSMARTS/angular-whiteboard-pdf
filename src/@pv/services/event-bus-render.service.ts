@@ -107,4 +107,45 @@ export class EventBusRenderService {
 
     return zoomScale;
   }
+
+  /**
+   * Thumbnail의 배경 rendering
+   * - canvas 대신 image 처리로 변경
+   * @param {element} imgElement <img>
+   * @param {number} pageNum 페이지 번호
+   * @param {element} canvas <canvas>
+   */
+  async renderThumbBackground(imgElement, pageNum) {
+    // console.log('> renderThumbnail Background');
+    const pdfPage = this.pdfStorageService.getPdfPage(pageNum);
+
+
+    // 배경 처리를 위한 임시 canvas
+    const tmpCanvas = document.createElement('canvas');
+    const tmpCtx = tmpCanvas.getContext("2d");
+
+    // 1/2 scale로 설정 (임시)
+    const viewport = pdfPage.getViewport({ scale: 0.5 });
+    tmpCanvas.width = viewport.width;
+    tmpCanvas.height = viewport.height;
+
+    try {
+      const renderContext = {
+        canvasContext: tmpCtx,
+        viewport
+      };
+      /*-----------------------------------
+        pdf -> tmpCanvas -> image element
+        ! onload event는 굳이 필요없음.
+      ------------------------------------*/
+      await pdfPage.render(renderContext).promise;
+      imgElement.src = tmpCanvas.toDataURL();
+
+      return true;
+
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
+  }
 }
