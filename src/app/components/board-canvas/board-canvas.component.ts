@@ -18,7 +18,7 @@ import { DrawStorageService } from '../../../@pv/storage/draw-storage.service';
 
 
 import { ViewInfoService } from '../../../@pv/store/view-info.service';
-import { EditInfoService } from '../../..//@pv/store/edit-info.service';
+import { EditInfoService } from '../../../@pv/store/edit-info.service';
 
 
 export interface DialogData {
