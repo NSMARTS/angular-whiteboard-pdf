@@ -6,7 +6,9 @@ import { Injectable } from '@angular/core';
 export class EventBusRenderService {
 
   constructor() { }
-
+  emit(event: EventData) {
+    this.subject$.next(event);
+  }
 
   initCanvasSet() {
 
