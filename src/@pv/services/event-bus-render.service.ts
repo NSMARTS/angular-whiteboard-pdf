@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EventBusRenderService {
-
+  private subject$ = new Subject();
   constructor() { }
   emit(event: EventData) {
     this.subject$.next(event);
