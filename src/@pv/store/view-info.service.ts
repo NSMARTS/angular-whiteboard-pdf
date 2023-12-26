@@ -22,6 +22,10 @@ export class ViewInfoService extends Store<any> {
     super(new InitViewInfo());
   }
 
+  /**
+   * pdf 정보, 현재 페이지, 총 페이지, 시간
+   * @param data 
+   */
   setViewInfo(data: any): void {
     this.setState({
       ...this.state, ...data

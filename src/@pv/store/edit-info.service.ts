@@ -33,7 +33,10 @@ export class EditInfoService extends Store<any> {
   }
 
 
-
+  /**
+   * 그리기 모드, 드래그(move) 모드 세팅, 펜 지우개 같은 도구 세팅
+   * @param editInfo 
+   */
   setEditInfo(editInfo: any): void {
 
     // Tool Disable 설정
